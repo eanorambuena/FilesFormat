@@ -1,1 +1,5 @@
-#Hello World
+## Usage
+
+```python
+import json
+```
