@@ -9,10 +9,10 @@
 
 
 ### Installation
-1.- Download [PFCF](pfcf.py) into your proyect folder.
-2.- Import `pfcf` in your python file.
-3.- Use it.
-4.- Enjoy.
+1. Download [PFCF](pfcf.py) into your proyect folder.
+2. Import `pfcf` in your python file.
+3. Use it.
+4. Enjoy.
 
 ### Usage
 
