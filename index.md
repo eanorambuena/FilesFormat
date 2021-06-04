@@ -9,9 +9,10 @@
 
 
 ### Installation
-First download [PFCF](pfcf.py) into your proyect folder.
-Then, import `pfcf` in your python file.
-Finally, use it.
+1.- Download [PFCF](pfcf.py) into your proyect folder.
+2.- Import `pfcf` in your python file.
+3.- Use it.
+4.- Enjoy.
 
 ### Usage
 
@@ -52,7 +53,7 @@ Finally, `0` is append to log1_hist.pfcf file.
 ```pfcf
 0
 ```
-
+ 
 ### Example 2
 ```python
 l.reset()
@@ -75,7 +76,7 @@ Finally, `1` is append to log1_hist.pfcf file.
 0
 1
 ```
-
+ 
 #### Example 3
 ```python
 data = {}
