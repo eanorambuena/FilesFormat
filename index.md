@@ -12,14 +12,15 @@
 1. Download [PFCF](pfcf.py) into your proyect folder.
 2. Import `pfcf` in your python file.
 3. Use it.
-4. Enjoy.
+4. Enjoy!
 
 ### Usage
 
-Import pfcf.
+#### How to import pfcf
 ```python
 from pfcf import *
 ```
+or `python import pfcf`.
  
 #### Example 1
 ```python
