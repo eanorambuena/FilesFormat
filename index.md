@@ -39,6 +39,49 @@ log1_0.pfcf
 hello[,world",|hello\[,world\",|by Eanorambuena~t~h~i~s~ ~t~e~x~t~ ~c~a~n~ ~n~o~t~ ~b~e~ ~p~r~i~n~t~e~d,
 ```
 
+hello
+world
+
+hello[
+world"
+
+by Eanorambuena
+
+
+
+    clients: 
+        
+            first_name: Sigrid
+
+            last_name: Mannock
+
+            age: 27
+
+            amount: 7.17
+        
+
+        
+            first_name: Joe
+
+            last_name: Hinners
+
+            age: 31
+
+
+            amount: 
+                1.9
+
+                5.5
+            
+        
+
+        
+            first_name: Theodoric
+
+            last_name: Rivers
+
+            age: 36
+
 ```python
 l.reset()
 l.p.den=":"
