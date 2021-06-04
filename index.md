@@ -33,6 +33,11 @@ l.row("by Eanorambuena"+l.den("this text can not be printed"))
 l.read()
 ```
 
+log1_0.pfcf
+```pfcf
+hello[,world",|hello\[,world\",|by Eanorambuena~t~h~i~s~ ~t~e~x~t~ ~c~a~n~ ~n~o~t~ ~b~e~ ~p~r~i~n~t~e~d,
+```
+
 ```python
 l.reset()
 l.p.den=":"
