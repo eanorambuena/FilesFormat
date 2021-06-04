@@ -5,7 +5,7 @@
 
 ### Sofware
 
-[Get the last version of this software here](https://github.com/PythonForChange/FilesFormat/blob/main/pfcf.py)
+[Get the last version of this software here](https://github.com/PythonForChange/FilesFormat/blob/main/pfcf.py).
 
 
 ### Installation
