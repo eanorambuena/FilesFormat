@@ -14,8 +14,6 @@
 3. Use it.
 4. Enjoy!
 
-![image](https://user-images.githubusercontent.com/38821970/120837927-4a92b800-c535-11eb-98e6-12647b9530fd.png)
-
 
 ### Usage
 
@@ -53,6 +51,9 @@ world"
 
 by Eanorambuena
 ```
+![image](https://user-images.githubusercontent.com/38821970/120838556-ee7c6380-c535-11eb-92c7-32edb9b71843.png)
+
+
 Finally, `0` is append to log1_hist.pfcf file.
 ```pfcf
 0
@@ -74,6 +75,8 @@ First, log1_1.pfcf file is made.
 Then, log1_1.pfcf is read and printed.
 ```
 ```
+![image](https://user-images.githubusercontent.com/38821970/120838601-fcca7f80-c535-11eb-92e2-afce35976807.png)
+
 
 Finally, `1` is append to log1_hist.pfcf file.
 ```pfcf
