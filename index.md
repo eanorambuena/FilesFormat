@@ -9,6 +9,13 @@
 
 
 ### Installation
+#### Option 1: Use pip (recommended)
+1. Intall pyforchange: `pip install pyforchange`
+2. Import pfcf in your python file: `python import pyforchange.pfcf`
+3. Use it.
+4. Enjoy!
+
+#### Option 2: Download the source
 1. Download [PFCF](pfcf.py) into your proyect folder.
 2. Import `pfcf` in your python file.
 3. Use it.
@@ -19,9 +26,12 @@
 
 #### How to import pfcf
 ```python
-from pfcf import *
+from pyforchange.pfcf import *
 ```
-or `python import pfcf`.
+or
+```python
+import pyforchange.pfcf as pfcf
+```
  
 #### Example 1
 ```python
