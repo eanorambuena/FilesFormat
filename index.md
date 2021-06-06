@@ -3,35 +3,33 @@
 > PythonForChange FilesFormat allows me to easily integrate different functionalities of the Python For Change ecosystem.
 
 
-### Sofware
+### Sofware {For Developers}
 
 [Get the last version of this software here](https://github.com/PythonForChange/FilesFormat/blob/main/pfcf.py).
 
 
 ### Installation
 #### Option 1: Use pip (recommended)
-1. Intall pyforchange: `pip install pyforchange`
-2. Import pfcf in your python file: `python import pyforchange.pfcf`
-3. Use it.
-4. Enjoy!
+1. Install pyforchange
+```
+pip install pyforchange
+```
+2. Import pfcf in your python file
+```python
+import pyforchange.pfcf
+```
+3. Enjoy!
 
 #### Option 2: Download the source
-1. Download [PFCF](pfcf.py) into your proyect folder.
-2. Import `pfcf` in your python file.
-3. Use it.
-4. Enjoy!
+1. Download [PFCF](pfcf.py) into your proyect folder
+2. Import pfcf in your python file
+```python
+import pfcf
+```
+3. Enjoy!
 
 
 ### Usage
-
-#### How to import pfcf
-```python
-from pyforchange.pfcf import *
-```
-or
-```python
-import pyforchange.pfcf as pfcf
-```
  
 #### Example 1
 ```python
