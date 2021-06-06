@@ -32,7 +32,10 @@ import pfcf
 ### Usage
  
 #### Example 1
+Import pfcf and give the instructions.
 ```python
+from pyforchange.pfcf import *
+
 l=LogFile("log1")
 l.row("hello[") #this [ can not be printed
 l.row("world\"") #this " can not be printed
