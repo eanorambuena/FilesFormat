@@ -1,1 +1,6 @@
-theme: jekyll-theme-slate
+remote_theme: pmarsceill/just-the-docs
+title: FilesFormat
+search_enabled: false
+aux_links:
+  "View on Github":
+    - "//github.com/PythonForChange/FilesFormat"
