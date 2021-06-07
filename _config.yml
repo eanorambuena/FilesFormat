@@ -2,5 +2,5 @@ remote_theme: pmarsceill/just-the-docs
 title: FilesFormat
 search_enabled: false
 aux_links:
-  "Home":
-    - "//pythonforchange.github.io/"
+  "View on Github":
+    - "//github.com/PythonForChange/pythonforchange.github.io"
