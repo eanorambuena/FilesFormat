@@ -3,7 +3,7 @@ layout: default
 title: FilesFormat
 nav_order: 1
 description: ""
-permalink: /FilesFormat
+permalink: /
 ---
 
 # FilesFormat
