@@ -68,9 +68,10 @@ class LogFile:
     return text
   def den(self,t):
     s=self.p.den[0]
-    text=""
+    text=s
     for i in t:
-      text+=s+i
+      text+=i
+    text+=s
     return text
   def reset(self,resetParserYesOrNo=1):
     self.text=""
@@ -110,7 +111,10 @@ class LogFile:
         elif  self.p.isVip(k[i]):
           m=1
         elif  self.p.isDeny(k[i]):
-          m=2
+          if m==0:
+            m=2
+          else:
+            m=0
         else:
           t+=k[i]
   def read(self,name="|",printYesOrNo=1):
