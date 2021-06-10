@@ -1,14 +1,27 @@
-hello[,world",|hello\[,world\",|by Eanorambuena,
-~this text can not be printed~,hellooooooooooo,
+hello[,world",|hello\[,world\",|
+~this text can not be printed~,Hi!,
 
-1. run main.py,
-2. edit this file and see the magic,
-3. it is the first real-time editor of .pfcf files,|
+1. Run main.py,
+2. Edit this file (example.pfcf) and see the magic,
+3. This is the first real-time editor of .pfcf files,|
 
 welcome to pfcf,
-~uwu~
+~uwu esto no se va a ver~
 a new lang,
 a new experience,
 welcome to the future,:),
-|May 10 2021\, 13:45
-,,,,,,,,,
+|May 10 2021\, 13:45,
+by Eanorambuena,|
+Add qiskit code,
+\<qiskit\>
+$host qasm_simulator
+\</qiskit\>
+<qiskit>
+$host qasm_simulator
+q0  q1
+    X
+H
+.-+
+c1
+</qiskit>
+,,,,,,,|||||||||||||||

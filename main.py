@@ -1,3 +1,4 @@
-from pfcf.read import executepfcf
+from pfcf.read import read,executepfcf
 
-executepfcf("example")
+name="example"
+executepfcf(name)

@@ -1,16 +1,14 @@
-
-hello
+hello[
 world
 
 hello[
 world"
 
-by Eanorambuena
 
-hellooooooooooo
-1. run main.py
-2. edit this file and see the magic
-3. it is the first real-time editor of .pfcf files
+Hi!
+1. Run main.py
+2. Edit this file (example.pfcf) and see the magic
+3. This is the first real-time editor of .pfcf files
 
 welcome to pfcf
 a new lang
@@ -19,11 +17,6 @@ welcome to the future
 :)
 
 May 10 2021, 13:45
+by Eanorambuena
 
-
-
-
-
-
-
-
+Add qiskit code
