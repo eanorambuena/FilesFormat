@@ -1,28 +1,6 @@
 import json, os
-
-class Parser():
-  def __init__(self,name="Parser"):
-    self.sep=[',']
-    self.sec=['|',"["]
-    self.ski=[']',"{","}","\""]
-    self.vip=["\\"]
-    self.den=["~"]
-    self.name=name
-  def compare(self,x,arr):
-    k = False
-    for i in arr:
-      k =( k or x==i)
-    return k
-  def separator(self,x):
-    return self.compare(x,self.sep)
-  def section(self,x):
-    return self.compare(x,self.sec)
-  def skip(self,x):
-    return self.compare(x,self.ski)
-  def isVip(self,x):
-    return self.compare(x,self.vip)
-  def isDeny(self,x):
-    return self.compare(x,self.den)
+from pfcf.read import *
+from pfcf.parser import *
 
 class FilesTree:
   def __init__(self,familyName="tree",form=".pfcf"):
@@ -32,23 +10,17 @@ class FilesTree:
   def reset(self):
     self.adress=self.name+"_hist"+self.format
     try:
-      lines=self.getLines()
+      lines=self.getLines(self.adress)
       for i in lines:
         os.remove(self.name+"_"+str(i)+self.format)
     except:
       pass
-  def getLines(self):
-    h=open(self.adress,"r")
-    lines=h.readlines()
-    h.close()
-    return lines
   def lastLine(self):
-    lines=self.getLines()
+    lines=getLines(self.adress)
     return lines[len (lines)-1]
   def register(self,t):
     with open(self.adress, 'a') as h:
       h.write(t+"\r\n")
-
 
 class LogFile:
   def __init__(self,name="log",form=".pfcf"):
@@ -88,35 +60,7 @@ class LogFile:
     f.close()
     self.h.register(str(i))
   def readFrom(self,adress,printYesOrNo=1):
-    f=open(adress,"r")
-    k=f.read()
-    self.text=k
-    f.close()
-    if printYesOrNo:
-      t=""
-      m=0
-      for i in range(0,len(k)):
-        if m==1:
-          t+=k[i]
-          m=0
-        elif m==2:
-          m=0
-        elif self.p.separator(k[i]):
-          print(t)
-          t=""
-        elif self.p.section(k[i]):
-          print("")
-        elif  self.p.skip(k[i]):
-          pass
-        elif  self.p.isVip(k[i]):
-          m=1
-        elif  self.p.isDeny(k[i]):
-          if m==0:
-            m=2
-          else:
-            m=0
-        else:
-          t+=k[i]
+    self.text=read(adress,1,1)[1]   
   def read(self,name="|",printYesOrNo=1):
     self.export()
     i=int(self.h.lastLine())
