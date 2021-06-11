@@ -1,5 +1,4 @@
 from pfcf.read import *
-from pfcf.parser import *
 from pfcf.utils import *
 
 class FilesTree:

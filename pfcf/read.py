@@ -1,5 +1,4 @@
 from pfcf.utils import *
-from pfcf.parser import *
 from pfcf.code import *
 
 def read(name: str,printYesOrNo: int =1,returnText: int =0):
@@ -35,14 +34,17 @@ def read(name: str,printYesOrNo: int =1,returnText: int =0):
         if codel2==codel:
           codef(codel,code)
           codem==0
+          codel=""
+          codel2=""
+        else:
+          print("Sintax error")
       elif codem==3:
         if j!="/":
           codel2+=j
       elif codem==2:
         code+=j
       elif codem==1: #Code mode on
-        if j!=" ":
-          codel+=j
+        codel+=j
       elif p.separator(j):
         T+=t+"\n"
         t=""
