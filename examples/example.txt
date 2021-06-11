@@ -15,7 +15,7 @@ Welcome to the future
 May 10 2021, 13:45
 by Eanorambuena
 
-Add qiskit code like this:
+Add code like this:
 
 <qiskit>
 q0  q1
@@ -26,4 +26,12 @@ c1
 $host qasm_simulator
 $hist true
 $draw true
-</qiskit>
+</qiskit>,
+
+<python>
+print("hello world")
+</python>,
+
+<wolfram>
+Range[5]
+</wolfram>,
