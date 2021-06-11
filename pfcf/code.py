@@ -1,5 +1,5 @@
 from pfcf.utils import *
-import pfcf.codel.qiskit as qiskit
+import pfcf.codel.qiskit as q
 
 def codef(codel: str,text: str): #code function
   form=".compile.py"
@@ -9,17 +9,21 @@ def codef(codel: str,text: str): #code function
     t=qiskit(text)
   f.write(t)
   f.close()
-  sleep(100)
+  sleep(1000)
   delete(codel,form)
 
 def qiskit(text: str):
   t=[]
-  t.append("from qiskit import QuantumCircuit, execute, Aer")
-  t.append("from qiskit.visualization import plot_histogram")
+  t.append("from qiskit import QuantumCircuit, execute, Aer\n")
+  t.append("from qiskit.visualization import plot_histogram\n")
   T=""
   s=0
   command=""
   param=""
+  Q=0
+  gate=""
+  gatecount=0
+  qdef=0
   for i in text:
     if s==1: #settings mode on
       if i!=" ":
@@ -27,15 +31,35 @@ def qiskit(text: str):
       else:
         s=2
     elif s==2:
-      if i!=" ":
+      if i!=" " and i!="\n":
         param+=i
       else:
-        qiskit.settings(command,param)
+        t.append(q.settings(command,param))
         s=0
     elif i=="$":
-      m=1
+      s=1
+    elif qdef==1:
+      if i=="q":
+        Q+=1
+      elif i=="\n":
+        qdef=2
+        t.append("circuit== QuantumCircuit("+str(Q)+","+str(Q)+")\n")
+    elif qdef==2:
+      if i!="\n" and i!=" ":
+        gate+=i
+      elif i==" ":
+        gatecount+=0.5
+        t.append(q.quantum(gate,gatecount))
+        gate=""
+      else:
+        t.append(q.quantum(gate,gatecount))
+        gate=""
+        gatecount=0
+    elif i=="q":
+      qdef=1
+      Q+=1
     
   for i in t:
-    T+=i+"\n"
+    T+=i
   return T
 

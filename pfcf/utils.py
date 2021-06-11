@@ -1,4 +1,4 @@
-import time, os, json
+import time, os, json, math
 
 def getLines(adress: str):
   h=open(adress,"r")
@@ -20,3 +20,6 @@ def clearConsole():
   if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls    
     command = 'cls'
   os.system(command)
+
+def floor(f: float):
+  return math.floor(f)

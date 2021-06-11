@@ -28,3 +28,12 @@ H,
 .---X,
 c1,
 \</qiskit\>,
+
+<qiskit>
+$host qasm_simulator
+q0  q1
+    X
+H
+.---X
+c1
+</qiskit>
