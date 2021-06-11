@@ -1,22 +1,27 @@
-hello[
+hello
 world
-
-hello[
-world"
-
 
 Hi!
 1. Run main.py
 2. Edit this file (example.pfcf) and see the magic
 3. This is the first real-time editor of .pfcf files
 
-welcome to pfcf
-a new lang
-a new experience
-welcome to the future
+Welcome to pfcf
+a new lang...
+a new experience...
+Welcome to the future
 :)
 
 May 10 2021, 13:45
 by Eanorambuena
 
-Add qiskit code
+Add qiskit code like this:
+
+<qiskit>
+$host qasm_simulator
+q0  q1
+    X
+H
+.---X
+c1
+</qiskit>

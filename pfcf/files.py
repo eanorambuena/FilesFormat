@@ -1,6 +1,6 @@
-import json, os
 from pfcf.read import *
 from pfcf.parser import *
+from pfcf.utils import *
 
 class FilesTree:
   def __init__(self,familyName: str ="tree",form: str =".pfcf"):
@@ -12,7 +12,7 @@ class FilesTree:
     try:
       lines=self.getLines(self.adress)
       for i in lines:
-        os.remove(self.name+"_"+str(i)+self.format)
+        delete(self.name+"_"+str(i))
     except:
       pass
   def lastLine(self):
@@ -71,5 +71,5 @@ class LogFile:
   def fromDict(self,data):
     name=self.name+".json"
     with open(name, 'w') as file:
-      json.dump(data, file, indent=4)
+      dump(data, file)
     self.readFrom(name)

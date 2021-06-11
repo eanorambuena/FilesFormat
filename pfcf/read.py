@@ -1,12 +1,6 @@
-import time
+from pfcf.utils import *
 from pfcf.parser import *
-from pfcf.code import codef
-
-def getLines(adress: str):
-  h=open(adress,"r")
-  lines=h.readlines()
-  h.close()
-  return lines
+from pfcf.code import *
 
 def read(name: str,printYesOrNo: int =1,returnText: int =0):
   lines=getLines(name+".pfcf")
@@ -67,10 +61,11 @@ def read(name: str,printYesOrNo: int =1,returnText: int =0):
     return a
   return T
 
-def executepfcf(name: str,delta: int =0.1):
+def executepfcf(name: str,delta: int =400):
   while True:
     T=read(name)
     f=open(name+".txt","w")
     f.write(T)
     f.close()
-    time.sleep(delta)
+    sleep(delta)
+    clearConsole()
