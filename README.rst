@@ -11,8 +11,7 @@
 ### Installation (last stable version)
 1. Install pyforchange
 
-.. code-block:: bash
-    pip install pyforchange
+    pip install pyforchange ::
 
 2. Import pfcf in your python file
 
@@ -27,7 +26,6 @@
 1. Open `Pyfoch <https://pythonforchange.github.io/pyfoch>`__.
 2. Write the following lines:
 
-.. code-block:: pfcf
     hello,world",|
     
     ~this text can not be printed~
@@ -67,14 +65,13 @@
     |
     \<wolfram\>,
     Range[5],
-    \</wolfram\>\,,
+    \</wolfram\>\,, ::
 
 3. In "File" menu, click on "Export".
 4. Give a name to your exported file and save.
 5. Open the exported file.
 6. The exported file will have the following text:
 
-.. code-block:: text
     hello
     world
     
@@ -111,7 +108,7 @@
     
     <wolfram>
     Range[5]
-    </wolfram>,
+    </wolfram>, ::
 
 7. Enjoy!
 
@@ -147,22 +144,22 @@ Import pfcf and give the instructions.
 First, log1_0.pfcf file is made.
 
 v2.0.2 or upper:
-.. code-block:: pfcf
-    hello[,world",|hello\[,world\",|by Eanorambuena~this text can not be printed~,
+
+    hello[,world",|hello\[,world\",|by Eanorambuena~this text can not be printed~, ::
 
 Then, log1_0.pfcf is read and printed.
-.. code-block:: text
+
     hello
     world
     
     hello[
     world"
     
-    by Eanorambuena
+    by Eanorambuena ::
 
 Finally, `0` is append to log1_hist.pfcf file.
-.. code-block:: pfcf
-    0
+
+    0 ::
  
 ### Example 2
 .. code-block:: python
@@ -174,17 +171,17 @@ Finally, `0` is append to log1_hist.pfcf file.
 First, log1_1.pfcf file is made.
 
 v2.0.2 or upper:
-.. code-block:: pfcf
-:this text can not be printed:,
+
+:this text can not be printed:, ::
 
 Then, log1_1.pfcf is read and printed.
-.. code-block:: text
-    
+
+     ::
 
 Finally, `1` is append to log1_hist.pfcf file.
-.. code-block:: pfcf
+
     0
-    1
+    1 ::
  
 #### Example 3
 .. code-block:: python
@@ -209,7 +206,7 @@ Finally, `1` is append to log1_hist.pfcf file.
     l2.fromDict(data)
 
 First, log2.json file is made.
-.. code-block:: json
+
     {
         "clients": [
             {
@@ -234,11 +231,11 @@ First, log2.json file is made.
                 "amount": 1.11
             }
         ]
-    }
+    } ::
 
 Then, log2.json is read as a .pfcf file.
 Finally, it is printed.
-.. code-block:: text
+
         clients: 
             
                 first_name: Sigrid
@@ -270,4 +267,4 @@ Finally, it is printed.
     
                 last_name: Rivers
     
-                age: 36
+                age: 36 ::
