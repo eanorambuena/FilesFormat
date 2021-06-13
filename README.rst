@@ -1,14 +1,19 @@
-# PFCF Language
+#############
+PFCF Language
+#############
 
 Python For Change Format Language allows to easily integrate different Python For Change Ecosystem functionalities
 
 
-### Sofware (for developers)
+Sofware (for developers)
+************************
 
 `Get the last version of this software here <https://github.com/PythonForChange/FilesFormat>`__
 
 
-### Installation (last stable version)
+Installation (last stable version)
+**********************************
+
 1. Install pyforchange
 
     pip install pyforchange ::
@@ -20,9 +25,11 @@ Python For Change Format Language allows to easily integrate different Python Fo
 
 3. Enjoy!
 
-### Writting PFCF code with `Pyfoch Editor <https://pythonforchange.github.io/pyfoch>`__
+Writting PFCF code with `Pyfoch Editor <https://pythonforchange.github.io/pyfoch>`__
+*************************************************************************************
 
-#### Example
+Example
+=======
 
 1. Open `Pyfoch <https://pythonforchange.github.io/pyfoch>`__.
 
@@ -116,7 +123,8 @@ Python For Change Format Language allows to easily integrate different Python Fo
 
 7. Enjoy!
 
-### Export PFCF code using pyforchange package
+Export PFCF code using pyforchange package
+******************************************
 
 Import executepfcf from pyforchange.pfcf.read.
 
@@ -128,9 +136,11 @@ Execute yourfilename.pfcf
 .. code-block:: python
     executepfcf(yourfilename)
 
-### Using pyforchange package in order to create log files
+Using pyforchange package in order to create log files
+******************************************************
  
-#### Example 1
+Example 1
+=========
 
 Import pfcf and give the instructions.
 .. code-block:: python
@@ -166,7 +176,9 @@ Finally, `0` is append to log1_hist.pfcf file.
 
     0 ::
  
-### Example 2
+Example 2
+=========
+
 .. code-block:: python
     l.reset()
     l.p.den=":"
@@ -188,7 +200,9 @@ Finally, `1` is append to log1_hist.pfcf file.
     0
     1 ::
  
-#### Example 3
+Example 3
+=========
+
 .. code-block:: python
     data = {}
     data['clients'] = []
