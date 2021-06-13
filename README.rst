@@ -1,6 +1,6 @@
 # PFCF Language
 
-> Python For Change Format Language allows me to easily integrate different Python For Change Ecosystem functionalities
+Python For Change Format Language allows to easily integrate different Python For Change Ecosystem functionalities
 
 
 ### Sofware (for developers)
@@ -23,8 +23,11 @@
 ### Writting PFCF code with `Pyfoch Editor <https://pythonforchange.github.io/pyfoch>`__
 
 #### Example
+
 1. Open `Pyfoch <https://pythonforchange.github.io/pyfoch>`__.
+
 2. Write the following lines:
+
 
     hello,world",|
     
@@ -66,6 +69,7 @@
     \<wolfram\>,
     Range[5],
     \</wolfram\>\,, ::
+
 
 3. In "File" menu, click on "Export".
 4. Give a name to your exported file and save.
@@ -127,6 +131,7 @@ Execute yourfilename.pfcf
 ### Using pyforchange package in order to create log files
  
 #### Example 1
+
 Import pfcf and give the instructions.
 .. code-block:: python
     from pyforchange.pfcf.files import *
