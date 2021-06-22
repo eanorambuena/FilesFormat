@@ -1,6 +1,7 @@
 from pfcf.utils import *
 import pfcf.codel.qiskit as q
 import pfcf.codel.wolfram as w
+import pfcf.codel.python as p
 
 def codef(codel: str,text: str): #code function
   form="_compile.py"
@@ -11,7 +12,7 @@ def codef(codel: str,text: str): #code function
   elif codel=="wolfram":
     t=wolfram(text)
   elif codel=="python":
-    t=text
+    t=python(text)
   f.write(t)
   f.close()
 
@@ -98,4 +99,33 @@ def wolfram(text: str):
       t=""
     elif i!="\n":
       t+=i
+  return T
+
+def python(text: str):
+  T=""
+  T+="from pyforchange.pfcf.utils import *\n"
+  T+="from pyforchange.pfcf.read import *\n"
+  s=0
+  command=""
+  param=""
+  for i in text:
+    if i==",":
+      pass
+    elif s==1: #settings mode on
+      if i!=" ":
+        command+=i
+      else:
+        s=2
+    elif s==2:
+      if i!=" " and i!="\n":
+        param+=i
+      else:
+        T+=p.settings(command,param)
+        command=""
+        param=""
+        s=0
+    elif i=="$":
+      s=1
+    else:
+      T+=i
   return T

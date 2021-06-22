@@ -1,4 +1,5 @@
 ~Python code~
 <python>
 print("hello world")
+$pfcf examples/example
 </python>,
