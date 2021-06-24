@@ -6,3 +6,5 @@
 
 NQS (Natural Quantum Script) is a speciall domain programming language. It is focused on quantum devices scripting.
 The launching date will be announced soon.
+
+File extension: .nqa (Natural Quantum Application)
