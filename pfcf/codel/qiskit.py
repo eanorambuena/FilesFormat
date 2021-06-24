@@ -1,4 +1,4 @@
-from pfcf.utils import *
+from nqs.utils import *
 def settings(command: str,param):
   t=""
   if command=="host":
