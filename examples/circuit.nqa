@@ -1,5 +1,6 @@
-~Qiskit code~
-<qiskit>
+~.nqa file code~
+
+$import qiskit
 q0  q1
     X
 H
@@ -8,4 +9,3 @@ c1
 $host qasm_simulator
 $hist true
 $draw true
-</qiskit>,
