@@ -1,8 +1,8 @@
-from pfcf.utils import *
-from pfcf.code import *
+from nqs.utils import *
+from nqs.code import *
 
 def read(name: str,printYesOrNo: int =1,returnText: int =0):
-  lines=getLines(name+".pfcf")
+  lines=getLines(name+".nqa")
   T=""
   t=""
   code=""
@@ -61,7 +61,7 @@ def read(name: str,printYesOrNo: int =1,returnText: int =0):
     return a
   return T
 
-def executepfcf(name: str,delta: int =400):
+def execute(name: str,delta: int =400):
   while True:
     T=read(name)
     f=open(name+".txt","w")
