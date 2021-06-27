@@ -1,4 +1,5 @@
-from nqs.utils import *
+import nqs.resources.utils as utils
+
 def settings(command: str,param):
   t=""
   if command=="host":
@@ -21,7 +22,7 @@ def settings(command: str,param):
 
 def quantum(gate: str,n):
   t=""
-  N=floor(n)
+  N=utils.floor(n)
   n=str(N)
   T="circuit."
   if len(gate)==1:
