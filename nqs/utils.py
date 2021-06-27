@@ -54,3 +54,14 @@ def execute(name):
     os.system(t)
   except:
     print("Execute error in: "+"/usr/bin/python "+name+".py")
+
+class Lang:
+  def __init__(self,name: str):
+    self.name=name
+  def write(self,T: str,name: str):
+    f=open(name+"."+self.name,"w")
+    f.write(T)
+    f.close()
+
+py=Lang("py")
+txt=Lang("txt")

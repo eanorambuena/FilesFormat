@@ -7,10 +7,6 @@ def codef(codel: str,text: str): #code function
   t=""
   if codel=="qiskit":
     t=qiskit(text)
-  elif codel=="wolfram":
-    t=wolfram(text)
-  elif codel=="python":
-    t=python(text)
   f.write(t)
   f.close()
 
@@ -64,3 +60,4 @@ def qiskit(text: str):
       qdef=1
       Q+=1
   return T
+ 

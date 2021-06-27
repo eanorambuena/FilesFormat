@@ -1,6 +1,6 @@
 from qiskit import QuantumCircuit, execute, Aer
 from qiskit.visualization import plot_histogram,display
-circuit=QuantumCircuit(2,2)
+circuit=QuantumCircuit(1,1)
 circuit.x(2)
 circuit.h(0)
 circuit.cx(0,1)
